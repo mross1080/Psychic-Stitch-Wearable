@@ -61,7 +61,7 @@ void loop() {
   sensorValue = analogRead(sensorPin);
 //  Serial.println(sensorValue);
   // turn the ledPin on
-  if (sensorValue > 500 && !animationTriggered) {
+  if (sensorValue > 400 && !animationTriggered) {
     Serial.print("S Value : ");
     Serial.println(sensorValue);
     animationTriggered = true;
